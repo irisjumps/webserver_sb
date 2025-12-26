@@ -29,8 +29,7 @@ password='$password'";
     if ($result->num_rows > 0) { 
         // Nếu có, đăng nhập thành công 
         echo "Bạn đã đăng nhập thành công"; 
-        // Thực hiện các hành động cần thiết, ví dụ như đưa người dùng 
-vào trang chào mừng 
+        // VD dua nguoi dung vao trang chao mung  
     } else { 
         // Nếu không, đăng nhập không thành công 
         echo "Bạn đã đăng nhập không thành công";    } 
