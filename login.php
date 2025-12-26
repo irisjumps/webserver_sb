@@ -11,8 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
  
 // Kiểm tra kết nối
 if ($conn->connect_error) { 
-    die("Kết nối không thành công: " . $conn->connect_error); 
-} 
+    die("Kết nối không thành công: " . $conn->connect_error); } 
  
 // Kiểm tra nếu form đã submit 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
@@ -21,8 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"]; 
  
     // Truy vấn lấy dữ liệu từ database 
-    $sql = "SELECT * FROM User WHERE username='$username' AND 
-password='$password'"; 
+    $sql = "SELECT * FROM User WHERE username='$username' AND password='$password'"; 
     $result = $conn->query($sql); 
  
     // Kiểm tra số lượng bản ghi trả về 
@@ -34,20 +32,16 @@ password='$password'";
         // Nếu không, đăng nhập không thành công 
         echo "Bạn đã đăng nhập không thành công";    } 
 } 
-?> 
- 
+?>  
 <!DOCTYPE html> 
-<html> 
- 
+<html>  
 <head> 
     <meta charset="UTF-8"> 
     <title>Đăng nhập</title> 
-</head> 
- 
+</head>  
 <body> 
     <h2>Đăng nhập</h2>
-   <form method="post" action="<?php echo 
-htmlspecialchars($_SERVER["PHP_SELF"]); ?>"> 
+   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"> 
         <label>Tên đăng nhập:</label> 
         <input type="text" name="username"><br><br> 
         <label>Mật khẩu:</label> 
@@ -55,5 +49,4 @@ htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <input type="submit" value="Đăng nhập"> 
     </form> 
 </body> 
- 
 </html> 
