@@ -1,6 +1,6 @@
 <?php  
 // Thiết lập thông tin kết nối đến database 
-$servername = "database-server.cwhwvbizzssn.us-east-1.rds.amazonaws.com";
+$servername = "database-1.cwhwvbizzssn.us-east-1.rds.amazonaws.com";
 $username = "admin"; 
 $password = "12345678"; 
 $dbname = "myDB"; 
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // VD dua nguoi dung vao trang chao mung  
     } else { 
         // Nếu không, đăng nhập không thành công 
-        echo "Bạn đã đăng nhập không thành công";    } 
+        echo "Bạn đã đăng nhập không thành công"; } 
 } 
 ?>  
 <!DOCTYPE html> 
