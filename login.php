@@ -1,7 +1,6 @@
-<?php 
- 
+<?php  
 // Thiết lập thông tin kết nối đến database 
-$servername = "dbrds.cvyox9pj9evr.us-east-1.rds.amazonaws.com"; //Endpoint of DB
+$servername = "database-server.cwhwvbizzssn.us-east-1.rds.amazonaws.com";
 $username = "admin"; 
 $password = "12345678"; 
 $dbname = "myDB"; 
